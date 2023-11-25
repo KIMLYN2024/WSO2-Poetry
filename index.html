@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF 8">
+        <title>Table Form</title>
+        <link rel="stylesheet" href="index.css">
+     </head>
+   <body> 
+       <img src="images/poetry.jpg" alt="poetry" width="100%" height="50%">
+       <h1>The Poetry Workshop</h1>
+       <P> We will be conducting a number of poetry workshop and symposiums throughout the year.</P>
+       <p>Please note that the following events are free to members:</p>
+       <ul>
+          <li> A Pottery Workshop</li>
+          <li> Painting Workshop</li>
+          <li> Poetry Workshop</li>
+     </ul>
+     <table>
+          <tr class="head">
+                <th></th>
+                <th>Toronto</th>
+                <th>Quebec</th>
+                <th>Ottawa</th>
+             </tr>
+              <tr>
+                  <th> A Pottery Workshop</th>
+                  <td>Sat, 3 Jan 2016<br />11am - 3pm</td> 
+                  <td>Sat, 8 Jan 2016<br />11am - 3pm</td>
+                  <td>Sat, 14 Jan 2016<br />11am - 3pm</td>
+              </tr>
+              <tr class="even">
+                     <th> Painting Workshop</th>
+                     <td>Sat, 15 Mar 2016<br />8am - 11pm</td>
+                     <td>Sat, 20 Mar 2016<br />8am - 11pm</td>
+                     <td>Sat, 25 Mar 2016<br />8am - 11pm</td>
+              </tr>
+               <tr>
+                     <th>Floristry Workshop</th>
+                     <td>Sat, 1 Sep 2016<br />11am - 2pm</td>
+                     <td>Sat, 14 Sep 2016<br />11am - 2pm</td>
+                     <td>Sat, 26 Sep 2016<br />11am - 2pm</td>
+                </tr>
+                <tr class="even">
+                    <th>Poetry Workshop</th>
+                    <td>Sat, 4 Dec 2016 <br/>11am - 3pm</td>
+                    <td>Sat, 8 Dec 2016 <br/>11am - 3pm</td>
+                    <td>Sat, 26 Dec 2016 <br/>11am - 3pm</td>
+                </tr>
+       </table>
+       <form action="https://www.superprof.ca/blog/study-poetry-in-canada/" methods="get">
+           <fieldset>
+                <legend>Register your interest</legend>
+                <p><label class="title" for="name"> Your name:</label>
+                        <input type="text" name="name" id="name"><br />
+                        <label class="title" for="email">Your email</label>
+                        <input type="text" name="email" id="email"></p>
+                <p><label for="location" class="title"> Your closest center:</label>
+                        <select name="location" id="location">
+                        <option value="ny">Toronto</option>
+                        <option value="il">Quebec</option>
+                        <option value="ca">Ottawa</option>
+                        </select></p>
+                <span class="title">Are you a member?</span>
+              <label><input type="radio" name="member" value="yes" /> Yes</label>
+              <label><input type="radio" name="member" value="no" /> No</label></p>
+          </fieldset>
+           <div class="submit"><input type="submit" value="Register" /></div>
+       </form>
+    </body>
+</html>
